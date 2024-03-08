@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pago</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Detalles de Pago</h1>
+        <form action="procesar_pago.php" >
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="tarjeta">Número de Tarjeta:</label>
+            <input type="text" id="tarjeta" name="tarjeta" required><br><br>
+            <label for="caducidad">Fecha de Caducidad:</label>
+            <input type="text" id="caducidad" name="caducidad" required><br><br>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required><br><br>
+            <input type="submit" value="Pagar">
+        </form>
+    </div>
+</body>
+</html> 
+
+<style>
+    .container {
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    input[type=text] {
+        width: 80%;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    input[type=submit] {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #0056b3;
+    }
+</style> 
+
+<!--El código anterior crea una página de pago básica con un formulario
+donde se pueden ingresar los detalles de la tarjeta de crédito para realizar un pago.
+El formulario envía los datos al archivo procesar_pago.php cuando se presiona el botón de "Pagar".-->

@@ -1,0 +1,30 @@
+<html>
+<head>
+<link rel="stylesheet" href="micss.css">
+</head>
+<body class="fondo" >
+  <center>  <h2>Elija su Pedido</h2></center>
+  
+    <center><li>Chicharrón de cerdo - $5</li></center>
+    <center><li>Chicharrón de pollo - $6</li></center>
+    <center><li>Chicharrón de pescado - $8</li></center>
+    
+    
+    <center><h3>Realizar pedido:</h3>
+    <form action="pagar.html" >
+      <label for="tipo_chicharron">Tipo de chicharrón:</label>
+      <select name="tipo_chicharron" id="tipo_chicharron">
+        <option value="cerdo">Chicharrón de cerdo</option>
+        <option value="pollo">Chicharrón de pollo</option>
+        <option value="pescado">Chicharrón pescado</option>
+      </select><br><br>
+      
+      <label for="cantidad">Cantidad:</label>
+      <input type="number" name="cantidad" id="cantidad" min="1" max="10"><br><br>
+      
+      <input type="submit" value="Realizar pedido">
+    </form>
+
+    </center>   
+</body>
+</html>
